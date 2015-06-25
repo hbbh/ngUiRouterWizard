@@ -1,0 +1,38 @@
+/* Example CSS for ngUiRouterWizard */
+
+ #ui-router-wizard {
+             background-color: #1a67b4;
+             color: #fff;
+             height: 30px;
+             text-transform: uppercase;
+             margin-bottom: 10px;
+  }
+
+  #ui-router-wizard .counter {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      text-align: center;
+      -ms-border-radius: 10px;
+      border-radius: 10px;
+      color: #1a67b4;
+      -ms-opacity: .6;
+      opacity: .6;
+  }
+
+  #ui-router-wizard ul {
+      margin-left: -36px;
+  }
+
+  #ui-router-wizard li.active .counter {
+      -ms-opacity: 1;
+      opacity: 1;
+
+  }
+
+  #ui-router-wizard ul li {
+      float: left;
+      padding: 4px 6px 0 0;
+      list-style-type: none;
+  }
