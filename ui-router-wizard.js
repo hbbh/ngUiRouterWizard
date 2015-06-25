@@ -5,57 +5,6 @@
      dependecies: LowDash, $state, $rootScope
      developed by: Tristan Blackwell
 
-     usage: 
-     
-        1) Add element to your app like this: 
-        
-        <div ui-router-wizard></div>
-
-        2) Configure your routes something like this:
-        
-        Adding a display attribute to each route to render inside the wizard bar, if you don't do this then the state name will be used.
-
-        app.config(function ($stateProvider) {
-        $stateProvider
-            .state('parent', {
-                url: '/parent',
-                views: {
-                    'main': {
-                        controller: 'parentCtrl',
-                        templateUrl: 'parent/parent.html'
-                    }
-                },
-                display: 'Step 1'
-            }).state('parent.step2', {
-                url: '/step2',
-                views: {
-                    'sub': {
-                        controller: 'step2Ctrl',
-                        templateUrl: 'parent/step2.html'
-                    }
-                },
-                display: 'Step 2'
-            }).state('parent.step3', {
-                url: '/step3',
-                views: {
-                    'sub': {
-                        controller: 'step3Ctrl',
-                        templateUrl: 'parent/step3.html'
-                    }
-                },
-                display: 'Step 3'
-            }).state('parent.step4', {
-                url: '/step4',
-                views: {
-                    'sub': {
-                        controller: 'step4Ctrl',
-                        templateUrl: 'parent/step4.html'
-                    }
-                },
-                display: 'Step 4'
-            });
-        });
-       
     */
     angular.module('ui.router.wizard', ['ui.router'])
     .directive('uiRouterWizard', ['$state', '$rootScope', function ($state, $rootScope) {
