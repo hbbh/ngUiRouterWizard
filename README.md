@@ -44,9 +44,9 @@ app.config(function ($stateProvider) {
             });
         });
 ```
-NOTE: Add a 'display' property to each state to render inside the wizard bar, if you don't do this then the state name will be used.
+NOTE: Add a 'display' property to each state to render inside the progress bar, if you don't do this then the state name will be used.
 
-Add an element with the ui-router-wizard attribute:
+Add an element with the ui-router-progressbar attribute:
 ```html
-<div ui-router-wizard></div>
+<div ui-router-progressbar></div>
 ```
