@@ -1,13 +1,13 @@
  /***
     https://github.com/hbbh/ui-router-wizard
 
-     A wizard based UI display directive that renders sibling routes.
+     A progress bar UI display directive that renders sibling routes.
      dependecies: LowDash, $state, $rootScope
      developed by: Tristan Blackwell
 
     */
-    angular.module('ui.router.wizard', ['ui.router'])
-    .directive('uiRouterWizard', ['$state', '$rootScope', function ($state, $rootScope) {
+    angular.module('ui.router.progressbar', ['ui.router'])
+    .directive('uiRouterProgressbar', ['$state', '$rootScope', function ($state, $rootScope) {
         return {
             template: '<div id="ui-router-wizard"><ul><li ng-repeat="route in routes" ng-class="{active: route.active}"><span class="counter"><span class="glyphicon glyphicon-ok" ng-if="route.complete"></span><span ng-if="!route.complete">{{route.index}}</span></span> <span ng-class="{\'hidden-xs\' : !route.active }">{{route.display}}</span></li></ul></div>',
             link: function (scope, element) {
