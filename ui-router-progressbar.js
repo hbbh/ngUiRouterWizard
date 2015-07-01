@@ -1,5 +1,5 @@
  /***
-    https://github.com/hbbh/ui-router-wizard
+    https://github.com/hbbh/ui-router-progressbar
 
      A progress bar UI display directive that renders sibling routes.
      dependecies: LowDash, $state, $rootScope
