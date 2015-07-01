@@ -1,9 +1,9 @@
  /***
     https://github.com/hbbh/ui-router-progressbar
-
-     A progress bar UI display directive that renders sibling routes.
-     dependecies: LowDash, $state, $rootScope
-     developed by: Tristan Blackwell
+    version: 0.0.1
+    A progress bar UI display directive that renders sibling routes.
+    dependecies: LowDash, $state, $rootScope
+    developed by: Tristan Blackwell
 
     */
     angular.module('ui.router.progressbar', ['ui.router'])
